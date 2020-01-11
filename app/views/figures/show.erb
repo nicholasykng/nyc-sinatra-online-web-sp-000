@@ -3,19 +3,19 @@
   <tr>
     <td align="center"><a href="/figures/<%= @figure.id %>"><%= @figure.name %></a>
       <ul>
-        Landmarks:
-          <% @figure.landmarks.each do |landmark| %>
-          <li><%= landmark.name %></li>
-          <% end %>
+      Landmarks:
+        <% @figure.landmarks.each do |landmark| %>
+        <li><%= landmark.name %></li>
+        <% end %>
         </ul>
         <ul>
-          Titles:
+        Titles:
           <% @figure.titles.each do |title| %>
           <li><%= title.name %></li>
           <% end %>
         </ul>
       </tr>
-    </td>
+        </td>
   </table>
   <br>
   <a class="button" href="/figures/<%= @figure.id %>/edit">Edit</a>
